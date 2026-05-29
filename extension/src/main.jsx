@@ -1,21 +1,15 @@
 import { StrictMode } from 'react'
-import { ReactDOM } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
+const rootElement =
+  document.getElementById('study-buddy-root')
 
-
-const rootElement=
-  document.getElementById(
-    "study-buddy-root"
-  );
-
-  if(rootElement){
-    ReactDOM.createRoot(rootElement).render(
-      <React.StrictMode>
-        <App/>
-      </React.StrictMode>
-    )
-  }
+if (rootElement) {
+   ReactDOM.createRoot(rootElement).render(
+      <App />
+  )
+}
 
 

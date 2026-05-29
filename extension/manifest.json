@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Study Mode",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab"],
+    "host_permissions": ["https://*.youtube.com/*"],
+
+    "content_scripts":
+    [{
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["src/content.js"],
+        "css": ["src/content.css"]
+    }]
+}
