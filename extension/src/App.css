@@ -1,0 +1,13 @@
+#study-buddy-root{
+    padding: 1;
+  margin-top: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 500px;
+  min-width: 500px;
+  height: 80vh;
+
+  background: #1e7773;
+}

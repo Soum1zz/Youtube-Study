@@ -73,6 +73,23 @@ function enableStudyMode(){
 if(document.getElementById("study-buddy-root")){
     return;
 }
+    const secondary =
+        document.querySelector("#secondary");
+
+    if (secondary) {
+        secondary.style.display = "none";
+    }
+    // const primary =
+    // document.querySelector("#primary");
+
+    // if (primary) {
+    // primary.style.width = "65vw";
+    // }
+    const page = document.querySelector("ytd-page-manager");
+
+    if(page){
+        page.style.marginRight = "500px";
+    }
     const app= document.createElement("div");
     app.id= "study-buddy-root";
 
