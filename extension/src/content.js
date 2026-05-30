@@ -1,12 +1,14 @@
+import { mountStudyBuddy } from "./main.jsx";
+
 console.log("content script loaded");
 if(window.location.href.includes("youtube.com")){
     console.log("yt detected")
     initStudyMode();
 }
 
-//     chrome.storage.local.set({
-//     isStudyEnab:false
-// })
+    chrome.storage.local.set({
+    isStudyEnab:false
+})
 
 function initStudyMode(){
 
@@ -75,6 +77,6 @@ if(document.getElementById("study-buddy-root")){
     app.id= "study-buddy-root";
 
     document.body.appendChild(app);
-    console.log("root inj")
-}
+    mountStudyBuddy();
+    }
     
