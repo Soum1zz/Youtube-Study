@@ -66,8 +66,8 @@ export default function BuddyLeft({ videos, setVideos, topics, setTopics, setTop
     }
 
     return (
-        <>
-            <div className="lefttop-header">TOPICS</div>
+        <div className='left-div'>
+            <h2 className="lefttop-header">TOPICS</h2>
             <div className="all-topic">
                 {topics.map((topic) => (
                     <div key={topic.id}>
@@ -97,6 +97,6 @@ export default function BuddyLeft({ videos, setVideos, topics, setTopics, setTop
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }

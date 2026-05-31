@@ -1,13 +1,44 @@
 #study-buddy-root{
-    padding: 1;
+  padding: 5rem;
   margin-top: 10vh;
   position: fixed;
   top: 0;
   right: 0;
 
-  width: 500px;
+  width: 450px;
   min-width: 500px;
   height: 80vh;
 
   background: #1e7773;
+}
+
+.content-div{
+  display: flex;
+  padding: 3rem;
+  gap: 2rem;
+}
+input{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+button{
+  border: none;
+  background: transparent;
+  padding: 1rem;
+}
+button:focus{
+  border: none;
+}
+
+.left-div{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.right-div{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
 }

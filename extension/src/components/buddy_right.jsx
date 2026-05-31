@@ -45,7 +45,7 @@ export default function BuddyRight({ topicId, notes, setNotes }) {
     }
 
     return (
-        <>
+        <div className='right-div'>
             <div className="right-header">
                 <h2>NOTES</h2>
             </div>
@@ -65,6 +65,6 @@ export default function BuddyRight({ topicId, notes, setNotes }) {
                 />
                 <button type="button" onClick={addNote}>Add Note</button>
             </div>
-        </>
+        </div>
     )
 }
